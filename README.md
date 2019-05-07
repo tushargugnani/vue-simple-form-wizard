@@ -1,7 +1,7 @@
 # VueJS Simple Form Wizard
 Simple Implementation of Multi Step Form with Validation in Vue 
 
-![alt text](https://github.com/tushargugnani/vue-simple-form-wizard/blob/master/public/images/multi-step%20form%20demo.png)
+![alt text](https://github.com/tushargugnani/vue-simple-form-wizard/blob/master/public/images/vue-multi-step-form.gif)
 
 ### Template
 
