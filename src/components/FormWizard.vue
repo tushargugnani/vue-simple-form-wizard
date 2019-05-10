@@ -10,7 +10,7 @@
             </li>
         </ul>                    
         <div class="tab-details">
-            <slot :registration="registration"></slot>
+            <slot :formData="formData"></slot>
         </div>
         <br/>
         <div class="field is-grouped">
@@ -40,7 +40,7 @@ export default {
         tabs: [],
         currentActive: 0,
         totalTabs: 0,
-        registration:{
+        formData:{
           name: '',
           email: '',
           about: '',
