@@ -1,7 +1,7 @@
 <template>
     <div>
         <ul class="steps has-content-centered">
-            <li class="steps-segment" v-for="tab in tabs" :class="{ 'is-active': tab.isActive }" v-bind:key="tab">
+            <li class="steps-segment" v-for="tab in tabs" :class="{ 'is-active': tab.isActive }" v-bind:key="tab.name">
                 <span class="steps-marker"></span>
                 <div class="steps-content">
                     <p class="is-size-4">{{tab.name}}</p>
@@ -10,7 +10,7 @@
             </li>
         </ul>                    
         <div class="tab-details">
-            <slot></slot>
+            <slot :registration="registration"></slot>
         </div>
         <br/>
         <div class="field is-grouped">
@@ -31,18 +31,23 @@
 
 <script>
 
-import Tab from './Tab.vue'
 
 export default {
   name: 'form-wizard',
-  components:{
-      Tab
-  },
+  
   data(){
     return{
         tabs: [],
         currentActive: 0,
         totalTabs: 0,
+        registration:{
+          name: '',
+          email: '',
+          about: '',
+          gender: '',
+          reference: '',
+          terms: '',     
+     }
         
     }
    },
