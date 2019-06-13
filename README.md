@@ -46,7 +46,7 @@ I am using bulma component and hence some styling classes refer to that. You can
 
 ## Demo
 
-[Working Demo](https://tushargugnani.github.io/form-wizard-vue-simple/)
+[Working Demo](https://tushargugnani.github.io/vue-simple-form-wizard/)
 
 ### Code Explanation
 
